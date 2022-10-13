@@ -58,11 +58,6 @@ public without sharing class Hackathon_SignupController {
                 return page;
                 
             }
-            else {
-                PageReference page = System.Page.CommunitiesSelfRegConfirm;
-                page.setRedirect(true);
-                return page;
-            }
         }
         
         return null;
