@@ -1,9 +1,9 @@
-<apex:page id="signinPage" showHeader="false" showChat="false" sidebar="false" standardStylesheets="false" controller="Hackathon_SigninController" language="{!language}">
+<apex:page id="signinPage" showHeader="false" showChat="false" sidebar="false" standardStylesheets="false" controller="Hackathon_SigninControllerEnforceExpId" language="{!language}">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Salesforce Hackathon $Label.Hackathon_SignIn</title>
+    <title>Salesforce Hackathon {!$Label.Hackathon_SignIn}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{!URLFOR($Resource.include, '_include/css/bootstrap.min.css')}" rel="stylesheet"/>
@@ -14,27 +14,39 @@
 </head>
 
   <body>
+
+    <apex:outputPanel rendered = "{! ISNULL(expId) }">
+      <div class="container">
+        <h2>{!$Label.Hackathon_Error}</h2>
+        <p style="color: #fff">
+          {!$Label.Hackathon_Error_NoCircumvent}
+        </p>
+      </div>
+    </apex:outputPanel>
+
+
+    <apex:outputPanel rendered = "{! NOT(ISNULL(expId)) }">
     
     <div class="container">
       <apex:form id="loginForm" forceSSL="true" styleClass="form-signin">
-        <h2>Salesforce Hackathon $Label.Hackathon_SignIn</h2>
+        <h2>Salesforce Hackathon {!$Label.Hackathon_SignIn}</h2>
         <apex:pageMessages showDetail="false" id="error"/>
         
-        <apex:inputText required="true" id="login-email" styleClass="form-control un" value="{!username}" label="$Label.Hackathon_Username"/>
-        <apex:inputSecret id="login-password" styleClass="form-control pw" value="{!password}" label="$Label.Hackathon_Password"/>
+        <apex:inputText required="true" id="login-email" styleClass="form-control un" value="{!username}" label="{!$Label.Hackathon_Username}"/>
+        <apex:inputSecret id="login-password" styleClass="form-control pw" value="{!password}" label="{!$Label.Hackathon_Password}"/>
         
         
-        <apex:commandButton action="{!login}" value="$Label.Hackathon_SignIn" id="login-submit" styleClass="btn btn-lg btn-primary btn-block"/>
+        <apex:commandButton action="{!login}" value="{!$Label.Hackathon_SignIn}" id="login-submit" styleClass="btn btn-lg btn-primary btn-block"/>
         <br/>
         <div id="login-option">
-            <span class="form-signin-forgot"><a href="./Hackathon_ForgotPassword" >$Label.Hackathon_ForgotPassword</a></span>
-            <span><a href="./Hackathon_Signup" class="nextsection">$Label.Hackathon_NoAccount</a></span>
+            <span class="form-signin-forgot"><a href="./Hackathon_ForgotPassword" >{!$Label.Hackathon_ForgotPassword}</a></span>
+            <span><a href="./Hackathon_Signup" class="nextsection">{!$Label.Hackathon_NoAccount}</a></span>
         </div>
           <br/>
           <br/>  
           <apex:repeat value="{!authProviders}" var="ap">
           <a class="btn btn-lg btn-block btn-default" href="https://login.salesforce.com/services/auth/sso/{!orgId}/{!ap.developername}?community={!encodedSiteUrl}&startUrl={!encodedStartUrl}">
-             $Label.Hackathon_LoginWith {!ap.FriendlyName}
+             {!$Label.Hackathon_LoginWith} {!ap.FriendlyName}
           </a>
           <br/>
           </apex:repeat>
@@ -53,5 +65,6 @@ $(document).ready(function() {
     $('.pw').attr('placeholder','{!$Label.site.password}');
 });
 </script>   
+    </apex:outputPanel> 
   </body>
 </apex:page>

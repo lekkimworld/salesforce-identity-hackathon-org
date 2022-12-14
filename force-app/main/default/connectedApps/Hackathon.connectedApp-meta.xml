@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>dummy@example.com</contactEmail>
+    <label>Hackathon</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:8080</callbackUrl>
+        <consumerKey>hackathon_id_00D3N00000042arUAA_1670506296</consumerKey>
+        <consumerSecret>hackathon_secret_00D3N00000042arUAA_1670506296</consumerSecret>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>true</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Hackathon_ForgotPassword</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Forgot Password</shortDescription>
+        <value>Forgot password?</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_LoginWith</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Login With</shortDescription>
+        <value>Login with</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_NoAccount</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - No Account</shortDescription>
+        <value>Don&apos;t have an account?</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_Password</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Password</shortDescription>
+        <value>Password</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_SignIn</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Sign In</shortDescription>
+        <value>Sign In</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_Username</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Username</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_Error_NoCircumvent</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Error - Do Not Circumvent</shortDescription>
+        <value>You must not try and circumvent the concent screens.</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_Error</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Error</shortDescription>
+        <value>Error</value>
+    </labels>
+</CustomLabels>

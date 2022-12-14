@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Glemt kodeord?</label>
+        <name>Hackathon_ForgotPassword</name>
+    </customLabels>
+    <customLabels>
+        <label>Log ind med</label>
+        <name>Hackathon_LoginWith</name>
+    </customLabels>
+    <customLabels>
+        <label>Opret konto</label>
+        <name>Hackathon_NoAccount</name>
+    </customLabels>
+    <customLabels>
+        <label>Kodeord</label>
+        <name>Hackathon_Password</name>
+    </customLabels>
+    <customLabels>
+        <label>Log Ind</label>
+        <name>Hackathon_SignIn</name>
+    </customLabels>
+    <customLabels>
+        <label>Brugernavn</label>
+        <name>Hackathon_Username</name>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_Error_NoCircumvent</name>
+        <label>Du skal ikke forsøge at omgå samtykkeskærmene.</label>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_Error</name>
+        <label>Fejl</label>
+    </customLabels>
+</Translations>
