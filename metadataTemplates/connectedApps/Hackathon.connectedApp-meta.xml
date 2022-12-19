@@ -17,4 +17,5 @@
         <ipRelaxation>ENFORCE</ipRelaxation>
         <refreshTokenPolicy>infinite</refreshTokenPolicy>
     </oauthPolicy>
+    <profileName>External Identity User</profileName>
 </ConnectedApp>

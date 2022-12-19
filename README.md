@@ -48,15 +48,18 @@ Experience Cloud Site
 
 ## Assisted In-org Configuration Steps ##
 ```
-rm ./force-app/main/default/connectedApps/*.xml 2> /dev/null
 ORG_ID=`sfdx force:org:display --json | jq ".result.id" -r`
-CLIENT_ID=hackathon_id_`echo $ORG_ID`_`date +%s`
-CLIENT_SECRET=hackathon_secret_`echo $ORG_ID`_`date +%s`
+SUFFIX=`echo $ORG_ID`_`date +%s`
+CLIENT_ID=hackathon_id_$SUFFIX
+CLIENT_SECRET=hackathon_secret_$SUFFIX
+rm ./force-app/main/default/connectedApps/*.xml 2> /dev/null
 cat ./metadataTemplates/connectedApps/Hackathon.connectedApp-meta.xml \
     | sed "s|REPLACE_CLIENT_ID|$CLIENT_ID|" \
     | sed "s|REPLACE_CLIENT_SECRET|$CLIENT_SECRET|" \
     > force-app/main/default/connectedApps/Hackathon.connectedApp-meta.xml
 sfdx force:source:deploy -m Profile,ConnectedApp,PlatformCachePartition
+echo $CLIENT_ID
+echo $CLIENT_SECRET
 ```
 
 Change "External User Profile" to "My External User Profile" in `force-app/main/default/classes/Hackathon_SignupController.cls`.

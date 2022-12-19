@@ -14,7 +14,7 @@
 </head>
 
   <body>
-
+x{!language}x
     <apex:outputPanel rendered = "{! ISNULL(expId) }">
       <div class="container">
         <h2>{!$Label.Hackathon_Error}</h2>
@@ -39,7 +39,7 @@
         <apex:commandButton action="{!login}" value="{!$Label.Hackathon_SignIn}" id="login-submit" styleClass="btn btn-lg btn-primary btn-block"/>
         <br/>
         <div id="login-option">
-            <span class="form-signin-forgot"><a href="./Hackathon_ForgotPassword" >{!$Label.Hackathon_ForgotPassword}</a></span>
+            <span class="form-signin-forgot"><a href="./Hackathon_ForgotPassword?language={!language}" >{!$Label.Hackathon_ForgotPassword}</a></span>
             <span><a href="./Hackathon_Signup" class="nextsection">{!$Label.Hackathon_NoAccount}</a></span>
         </div>
           <br/>

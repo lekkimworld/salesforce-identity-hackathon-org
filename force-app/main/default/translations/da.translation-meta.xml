@@ -13,7 +13,8 @@
         <name>Hackathon_NoAccount</name>
     </customLabels>
     <customLabels>
-        <label>Kodeord</label>
+        <label>
+            Kodeord</label>
         <name>Hackathon_Password</name>
     </customLabels>
     <customLabels>
@@ -31,5 +32,17 @@
     <customLabels>
         <name>Hackathon_Error</name>
         <label>Fejl</label>
+    </customLabels>
+    <customLabels>
+        <name>Hackthon_ForgotPassword_Subject</name>
+        <label>Glemt dit kodeord?</label>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_ForgotPasswordConfirmation</name>
+        <label>Der er sendt en email til dig med instruktioner om hvordan du kan få et nyt kodeord.</label>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_Submit</name>
+        <label>Afsend</label>
     </customLabels>
 </Translations>

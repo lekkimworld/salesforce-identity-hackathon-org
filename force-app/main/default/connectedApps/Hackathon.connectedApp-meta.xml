@@ -4,8 +4,7 @@
     <label>Hackathon</label>
     <oauthConfig>
         <callbackUrl>http://localhost:8080</callbackUrl>
-        <consumerKey>hackathon_id_00D3N00000042arUAA_1670506296</consumerKey>
-        <consumerSecret>hackathon_secret_00D3N00000042arUAA_1670506296</consumerSecret>
+        <consumerKey>hackathon_id_00D3N00000043d0UAA_1671439587</consumerKey>
         <isAdminApproved>true</isAdminApproved>
         <isConsumerSecretOptional>true</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
@@ -17,4 +16,6 @@
         <ipRelaxation>ENFORCE</ipRelaxation>
         <refreshTokenPolicy>infinite</refreshTokenPolicy>
     </oauthPolicy>
+    <profileName>External Identity User</profileName>
+    <profileName>Salesforce Identity Hackathon Profile</profileName>
 </ConnectedApp>

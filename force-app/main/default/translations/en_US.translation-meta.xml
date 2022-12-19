@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customLabels>
-        <label><!-- Hackathon - Forgot Password --></label>
+        <label></label>
         <name>Hackathon_ForgotPassword</name>
     </customLabels>
     <customLabels>
-        <label><!-- Hackathon - Login With --></label>
+        <label></label>
         <name>Hackathon_LoginWith</name>
     </customLabels>
     <customLabels>
-        <label><!-- Hackathon - No Account --></label>
+        <label></label>
         <name>Hackathon_NoAccount</name>
     </customLabels>
     <customLabels>
-        <label><!-- Hackathon - Password --></label>
+        <label></label>
         <name>Hackathon_Password</name>
     </customLabels>
     <customLabels>
-        <label><!-- Hackathon - Sign In --></label>
+        <label></label>
         <name>Hackathon_SignIn</name>
     </customLabels>
     <customLabels>
-        <label><!-- Hackathon - Username --></label>
+        <label></label>
         <name>Hackathon_Username</name>
     </customLabels>
     <customLabels>
         <name>Hackathon_Error_NoCircumvent</name>
-        <label><!-- Hackathon - Error - No Circumvent --></label>
+        <label></label>
     </customLabels>
     <customLabels>
         <name>Hackathon_Error</name>
-        <label><!-- Hackathon - Error --></label>
+        <label></label>
+    </customLabels>
+    <customLabels>
+        <name>Hackthon_ForgotPassword_Subject</name>
+        <label></label>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_ForgotPasswordConfirmation</name>
+        <label></label>
+    </customLabels>
+    <customLabels>
+        <name>Hackathon_Submit</name>
+        <label></label>
     </customLabels>
 </Translations>

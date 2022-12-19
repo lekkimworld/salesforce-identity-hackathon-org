@@ -64,4 +64,29 @@
         <shortDescription>Hackathon - Error</shortDescription>
         <value>Error</value>
     </labels>
+    <labels>
+        <fullName>Hackthon_ForgotPassword_Subject</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Forgot Password Subject</shortDescription>
+        <value>Forgot Your Password?</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_ForgotPasswordConfirmation</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Forgot Password Text</shortDescription>
+        <value>We've sent you an email with steps on how to recover your password.</value>
+    </labels>
+    <labels>
+        <fullName>Hackathon_Submit</fullName>
+        <categories>Hackathon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hackathon - Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    
 </CustomLabels>
