@@ -28,7 +28,7 @@
         <br/>
         <div id="login-option">
             <span class="form-signin-forgot"><a href="./Hackathon_ForgotPassword" >{!$Label.Hackathon_ForgotPassword}</a></span>
-            <span><a href="./Hackathon_Signup" class="nextsection">!{$Label.Hackathon_NoAccount}</a></span>
+            <span><a href="./Hackathon_Signup" class="nextsection">{!$Label.Hackathon_NoAccount}</a></span>
         </div>
           <br/>
           <br/>  

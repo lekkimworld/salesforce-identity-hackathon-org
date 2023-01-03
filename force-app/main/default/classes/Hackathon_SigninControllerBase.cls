@@ -9,22 +9,23 @@ global virtual with sharing class Hackathon_SigninControllerBase {
     public List<AuthProvider> authProviders {get;set;}
     
     global Hackathon_SigninControllerBase (boolean enforceExperienceId) {
-        final String expId = System.Site.getExperienceId();
-        final integer idx1 = expId.indexOf('_') + 1;
-        final integer idx2 = idx1+4;
-        this.language = expId.substring(idx1, idx2);
-        if (null == this.language) {
-            this.language = 'en_US';
-        } else {
-            this.language = this.language.substring(0, 2) + '_' + this.language.substring(2);
-        }
-        final String nonce = expId.substring(idx2);
+        this.language = 'en_US';
+        if (enforceExperienceId) {
+            final String expId = System.Site.getExperienceId();
+            final integer idx1 = expId.indexOf('_') + 1;
+            final integer idx2 = idx1+4;
+            this.language = expId.substring(idx1, idx2);
+            if (null != this.language) {
+                this.language = this.language.substring(0, 2) + '_' + this.language.substring(2);
+            }
+            final String nonce = expId.substring(idx2);
 
-        if (Cache.Org.contains('local.Nonce.' + nonce)) {
-            Cache.Org.remove('local.Nonce.' + nonce);
-            this.expId = nonce;
-        } else {
-            return;
+            if (Cache.Org.contains('local.Nonce.' + nonce)) {
+                Cache.Org.remove('local.Nonce.' + nonce);
+                this.expId = nonce;
+            } else {
+                return;
+            }
         }
         this.orgId = UserInfo.getOrganizationId();
         this.siteURL  = Site.getBaseUrl();
