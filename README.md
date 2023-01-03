@@ -52,7 +52,7 @@ ORG_ID=`sfdx force:org:display --json | jq ".result.id" -r`
 SUFFIX=`echo $ORG_ID`_`date +%s`
 CLIENT_ID=hackathon_id_$SUFFIX
 CLIENT_SECRET=hackathon_secret_$SUFFIX
-rm ./force-app/main/default/connectedApps/*.xml 2> /dev/null
+mkdir -p force-app/main/default/connectedApps
 cat ./metadataTemplates/connectedApps/Hackathon.connectedApp-meta.xml \
     | sed "s|REPLACE_CLIENT_ID|$CLIENT_ID|" \
     | sed "s|REPLACE_CLIENT_SECRET|$CLIENT_SECRET|" \
