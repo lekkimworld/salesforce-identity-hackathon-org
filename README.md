@@ -21,7 +21,7 @@ Create Connected App
 - Ensure selected: "Refresh token is valid until revoked"
 - Permitted Users: "Admin users are pre-authorized"
 
-Platform Cache
+Platform Cache (required when using `Hackathon_SigninEnforceExpId` login page)
 - Create a partition called "Nonce" with some MB allocated under `Org Cache Allocation`
 
 CORS
@@ -31,7 +31,7 @@ CORS
 "External Identity User" Profile
 - Access to Connected App
 
-Experience Guest User Profile
+Experience Guest User Profile (public access)
 - Access to Visualforce Pages
 - Access to Apex classes
 
@@ -39,12 +39,12 @@ Experience Cloud Site
 - Activate
 - Add "External Identity Users" to Members
 - Login & Registration
-    - Set "Login Page" to Visualforce page
+    - Set "Login Page" to Visualforce page (`Hackathon_Signin`)
     - Set "Logout Page URL" to "http://localhost:8080"
-    - Set "Forgot Password" to Visualforce page
-    - Set "Reset Password" to Visualforce page
+    - Set "Forgot Password" to Visualforce page (`Hackathon_ForgotPassword`)
+    - Set "Reset Password" to Visualforce page (`Hackathon_ResetPassword`)
     - Select "Allow customers and partners to self-register"
-    - Set "Registration Page Type" to Visualforce page
+    - Set "Registration Page Type" to Visualforce page (`Hackathon_Signup`)
 
 ## Assisted In-org Configuration Steps ##
 ```
